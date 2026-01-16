@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div class="header-text">
+                <h1>Todo App</h1>
+                <p>Keep it up!</p>
+            </div>
+            <div class="editable-circle-container">
+                <div class="numbers" id="circle-container">
+                    <span id="circle-text">1/3</span>
+                </div>
+                <div class="circle-label" id="circle-label">Completed</div>
+            </div>
+        </div>
+        <div class="progress-section">
+            <div class="progress-text">
+                <span id="progress-count">1 / 3</span>
+                <span id="progress-percent">33%</span>
+            </div>
+            <div class="progressBar">
+                <div class="progress" id="progress-fill"></div>
+            </div>
+        </div>
+        <div class="input-section">
+            <div class="input-wrapper">
+                <i class="fas fa-pencil-alt"></i>
+                <input type="text" class="task-input" id="task-input" placeholder="Write your task">
+            </div>
+        </div>        
+        <div class="tasks-section">
+            <div class="tasks-container" id="tasks-container">
+            </div>
+            <div class="list-full-message" id="list-full-message">✓ List full!</div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
